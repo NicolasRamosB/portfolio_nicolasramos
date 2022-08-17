@@ -1,0 +1,39 @@
+nav{
+    z-index: 5;
+ background: rgba(0,0,0,0.3);
+ width: max-content;
+ display: block;
+ padding: 0.7rem 1.7rem;
+ 
+ position: fixed;
+ left: 50%;
+ transform: translateX(-50%);
+ bottom: 2rem;
+ display: flex;
+ gap:0.8rem;
+ border-radius: 3rem;
+ backdrop-filter: blur(12px);
+
+}
+nav:hover{
+    background: rgba(0, 0, 0, 0.63);
+    border: 1px solid rgba(248, 248, 248, 0.37);
+}
+nav a{
+    background: transparent;
+    padding: 0.9rem;
+    border-radius: 50%;
+    display:flex;
+    color: var(--color-bg-button);
+    font-size: 1.3rem;
+}
+
+nav a:hover{
+    background: rgba(68, 68, 68, 0.63);
+}
+
+nav a.active{
+    color: var(--color-white);
+    background: var(--color-primary-variant) ;
+}
+

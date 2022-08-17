@@ -1,0 +1,136 @@
+section{
+    
+    width: 80%;
+    height: 100vh;
+    padding-top:3rem;
+    text-align:center;
+}
+
+h1{
+    margin: 10px;
+}
+
+.about__container{
+   
+    width: 80%;
+}
+
+.about__content{
+   
+    
+    border: 2px groove rgba(255, 255, 255, 0.205);
+    border-radius:  50px 50px 0px 0px;
+    background: linear-gradient(145deg, rgb(58, 4, 184), rgba(70, 8, 77, 0.74));
+    box-shadow:  20px 20px 60px rgba(71, 4, 110, 0.815),
+                -20px -20px 60px rgba(95, 7, 105, 0.781);
+
+}
+
+.swiper-pagination-clickable .swiper-pagination-bullet{
+    background: white;
+}
+.swiper-button-prev::after, .swiper-button-next::after{
+    color: white;
+    background: rgba(0, 0, 0, 0.479);
+    padding:10px;
+}
+
+.about__card{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+     
+    
+   
+    
+    padding-bottom: 4rem;
+
+}
+
+.about__card img{
+    overflow: hidden;
+    padding:2rem;
+    
+}
+
+
+
+
+.skills__content{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    background:rgba(14, 1, 15, 0.74);
+    padding: 5rem;
+    transition: var(--transition);
+    
+    border-radius:  0px 0px 50px 50px;
+}
+
+i{
+    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size:10vh;
+    padding:40px;
+}
+
+
+.skills{
+    width: 80%;
+    height:30vh;
+    text-align: center;
+    
+}
+
+.skills__content i small{
+    font-size:1rem;
+    color:var(--color-light);
+}
+
+.icon1{
+    color: rgb(255, 94, 0);
+}
+.icon2{
+    color: rgb(43, 99, 221);
+}
+.icon3{
+    color: rgb(58, 32, 153);
+}
+.icon4{
+    color: rgb(0, 162, 255);
+}
+.icon5{
+    color: rgb(255, 230, 0);
+}
+.icon6{
+    color: rgb(0, 247, 255);
+}
+.icon7{
+    color: rgb(175, 66, 2);
+}
+.icon8{
+    color: rgb(185, 185, 185);
+}
+.icon9{
+    color: rgb(163, 11, 6);
+}
+.icon10{
+    color: rgb(0, 84, 139);
+}
+.icon11{
+    color: rgb(74, 237, 243);
+}
+.icon12{
+    color: rgb(216, 130, 0);
+}
+.icon13{
+    color: rgb(93, 167, 96)
+}
