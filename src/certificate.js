@@ -6,6 +6,8 @@ import IMG5 from './assets/prog.png'
 
 const certificated = [
 
+   
+
     {
         id: 1,
         title: 'React Frontend Development Career ',

@@ -13,13 +13,13 @@
 
 :root{
     --color-bg: rgb(66, 73, 73);
-    --color-bg-variant: rgb(14, 21, 32);
-    --color-primary:rgb(159, 247, 232);
+    --color-bg-variant: rgba(14, 21, 32, 0.76);
+    --color-primary:rgb(91, 138, 130);
     --color-primary-variant:rgb(0, 110, 92);
     --color-white: rgb(240, 243, 244);
     --color-light: rgba(240, 243, 244, 0.6);
     --color-bg-card: rgba(62, 97, 129, 0.616);
-    --color-bg-button: rgba(196, 163, 93, 0.89);
+    --color-bg-button: rgb(196, 163, 93);
 
     --container-width-lg: 70%; 
     --container-width-md: 70%;
@@ -144,6 +144,9 @@ img{
 @media screen and (max-width: 600px){
     .container{
         width: var(--container-width-sm);
+    }
+    .arrow_container{
+        display: none;
     }
 }
 

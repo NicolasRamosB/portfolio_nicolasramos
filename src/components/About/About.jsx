@@ -7,9 +7,11 @@ import { BsArrowRightSquareFill, BsArrowLeftSquareFill, BsBootstrapFill } from '
 import { AiFillHtml5 } from 'react-icons/ai'
 import { SiVercel, SiJavascript, SiTailwindcss, SiAdobephotoshop, SiAdobelightroom, SiAdobeillustrator } from 'react-icons/si'
 import { DiGit } from 'react-icons/di'
+import { FiLink } from 'react-icons/fi'
 
 
 
+import { useTranslation } from 'react-i18next'
 
 import { Pagination, Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -22,6 +24,7 @@ import 'swiper/css/autoplay';
 import certificated from '../../certificate'
 
 const About = () => {
+  const [t]= useTranslation("global")
 
   return (
     <>
@@ -32,21 +35,31 @@ const About = () => {
       </div>
 
       <section id="about" className="container">
-        <h1>Certifications & Skills</h1>
+        <h1>{t("certifications.title")}</h1>
         <div className="container about__container">
 
 
           <Swiper
             modules={[Pagination, Navigation]}
-            spaceBetween={40}
-            slidesPerView={2}
-
+            spaceBetween={5}
             
-
+            
+            breakpoints={ {
+              600: {
+                slidesPerView: 1,
+                spaceBetween: 0,
+              },
+              
+              1024: {
+                slidesPerView: 3,
+                spaceBetween: 50,
+              },
+            }}
+        
             
             grabCursor={true}
-            mousewheelControl={true}
-            keyboardControl={true}
+            
+            
 
             pagination={{
               clickable: true,
@@ -64,7 +77,7 @@ const About = () => {
                     <h3>{item.title} <FaAward className="about__icon" /></h3>
                     <small>{item.from}</small>
 
-                    <a href={item.link} target="_blank" rel="noopener noreferrer"> Certified </a>
+                    <a href={item.link} target="_blank" rel="noopener noreferrer"> Certified <FiLink/> </a>
 
                   </SwiperSlide>
                 )
@@ -83,14 +96,27 @@ const About = () => {
           <article className="skills__container">
             
             <Swiper
-              modules={[ Autoplay]}
-              spaceBetween={40}
-              slidesPerView={4}
+              modules={[ Autoplay ]}
+              
+              
+
+              breakpoints={ {
+                600: {
+                  slidesPerView: 2,
+                  spaceBetween: 0,
+                },
+                
+                1024: {
+                  slidesPerView: 6,
+                  spaceBetween: 50,
+                },
+              }}
+          
               
               speed={1000}
               grabCursor={true}
-              mousewheelControl={true}
-              keyboardControl={true}
+             
+              
               freeMode={true}
               
               autoplay={{

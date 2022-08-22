@@ -1,0 +1,22 @@
+{
+    "header":{
+        "hello":"Hello i'm",
+        "front":"Frontend Developer React Jr.",
+        "button_D":"Download CV",
+        "button_L":"Let's Talk",
+        "about_me":"About Me",
+        "about":"Hi! I'm Nicolas Ramos, I'm 25 years old and I live in Buenos Aires, Argentina. In search of a 180° turn on my profession, in 2021 I started as self-taught in programming, finding my vocation. I recently completed my studies as a Frontend Developer React Jr. certified by CoderHouse. I have experience as a freelancer in e-commerce development projects and I continue training to be able to work as a Full Stack Developer."
+    },
+
+    "certifications":{
+        "title":"Certifications & Skills"
+    },
+
+    "contact":{
+        "title":"Contact Me",
+        "send_m":"Send Message",
+        "name":"Your Full Name",
+        "email":"Your Email",
+        "message":"Your Message"
+    }
+}

@@ -1,6 +1,7 @@
-.container.contact__container{
-    width: 58%;
+.contact__container{
+    width: 70%; 
     display: grid;
+    padding-top: 8%;
     grid-template-columns: 30% 58%;
     gap:12%;
 
@@ -9,7 +10,9 @@
 .contact__options{
     display: flex;
     flex-direction: column;
-    gap: 1.2rem;
+    margin-top:13%;
+    gap: 3rem;
+    
 }
 
 .contact__option{
@@ -44,29 +47,42 @@ form{
     display: flex;
     flex-direction: column;
     gap: 1.2rem;
+    z-index: 100;
 }
 
 
-input, textarea{
+
+#name,#email,#message{
     width: 100%;
     padding:1.5rem;
     border-radius: 0.5;
     background:transparent;
-    border: 2px groove var(--color-primary-variant);
+    border: 2px solid var(--color-primary-variant);
     resize:none;
     color: var(--color-white);
+    z-index: 100;
+}
+
+
+.textArea{
+    height: 300px;
+}
+
+label{
+    border-radius: 5px;
 }
 
 @media screen and (max-width: 1024px) {
     .container.contact__container{
         grid-template-columns: 1fr;
         gap:2rem;
-
+        padding-bottom: 20vh;
     }
 }
 
 @media screen and (max-width: 600px) {
    .container.contact__container{
         width: var(--container-width-sm);
+        padding-bottom: 20vh;
     }
 }

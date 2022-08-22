@@ -7,13 +7,23 @@ import About from './components/About/About';
 
 
 import Portfolio from './components/Portfolio/Portfolio';
-import Testimonials from './components/Testimonials/Testimonials';
+
 import Contact from './components/Contact/Contact';
 
 import Particles from './components/Particles/Particles';
+import { useTranslation } from 'react-i18next';
+import ButtonTraslate from './components/ButtonTraslate/ButtonTraslate';
 
+
+
+import "primereact/resources/themes/mdc-dark-indigo/theme.css"; 
+import "primereact/resources/primereact.min.css";                  
+import "primeicons/primeicons.css";                                
+ 
 
 function App() {
+
+  
 
   return (
 
@@ -21,7 +31,8 @@ function App() {
 
 
       <BrowserRouter>
-
+      
+      <ButtonTraslate/>
         <Navbar />
 
         <Routes>
@@ -29,7 +40,6 @@ function App() {
           <Route path="/" element={<Header />} />
           <Route path="/about" element={<About />} />
           <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/testimonials" element={<Testimonials />} />
           <Route path="/contact" element={<Contact />} />
 
 

@@ -6,27 +6,31 @@ import ME from '../../assets/DSC_0075.jpg'
 import { Link } from 'react-router-dom'
 
 import { BsArrowRightSquareFill, BsArrowLeftSquareFill } from 'react-icons/bs'
+import { useTranslation } from 'react-i18next'
 
 
 const Header = () => {
 
+  const [t] = useTranslation("global")
+
 
   return (
     <header >
+      
+
       <div className="arrow_container">
         <Link to="/" className="arrow" ><BsArrowLeftSquareFill /></Link>
         <Link to="/about" className="arrow"><BsArrowRightSquareFill /></Link>
       </div>
       <div className="container header__container">
-
+      
         <div >
-          <h5>Hello I,m</h5>
+          <h5>{t("header.hello")}</h5>
           <h1>Nicolas Ramos</h1>
           <div className="wrapper">
-            <div className="typing-demo text-light">Frontend Developer React Jr.</div>
+            <div className="typing-demo text-light">{t("header.front")}</div>
           </div>
 
-          <CTA />
         </div>
 
         <div className=" container containter__me ">
@@ -35,14 +39,10 @@ const Header = () => {
           </div>
 
           <div className="description">
-            <h2>About Me</h2>
-            <p>Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Soluta voluptate
-              natus maiores nihil doloribus itaque
-              tenetur corrupti? Ex dolore error
-              beatae quisquam veniam, debitis
-              minima dolorem iste, cupiditate
-              dolor sit?</p>
+            
+            <p>{t("header.about")}</p>
+          <CTA />
+
           </div>
 
         </div>
