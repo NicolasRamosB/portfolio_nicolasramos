@@ -25,12 +25,9 @@ const Portfolio = () => {
 
                 <article className="portfolio__item" key={item.id}>
 
-                  <div className="protfolio__img">
-                    <img src={item.img} alt={item.title} />
-                  </div>
                   <div className="protfolio__info">
                     <h3>{item.title}</h3>
-                    
+                    <small>{item.description}</small>
                   </div>
 
                   <div className="portfolio__cta">
