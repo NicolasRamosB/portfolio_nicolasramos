@@ -2,19 +2,21 @@ import React from 'react'
 import './portfolio.css'
 import portfolio from '../../portfolio'
 import { Link } from 'react-router-dom'
-import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from 'react-icons/bs'
+import { MdArrowForwardIos, MdArrowBackIosNew } from 'react-icons/md'
+
 
 const Portfolio = () => {
   return (
     <>
       <div className="arrow_container">
-        <Link to="/about" ><BsArrowLeftSquareFill className="arrow" /></Link>
-        <Link to="/contact" ><BsArrowRightSquareFill className="arrow" /></Link>
+        <Link to="/about" ><MdArrowBackIosNew className="arrow" /></Link>
+        <Link to="/contact" ><MdArrowForwardIos className="arrow" /></Link>
       </div>
-      <section id="portfolio">
-        <h2>Portfolio</h2>
+      <div id="portfolio">
+      <h2>Portfolio</h2>
 
-        <div className="container protfolio__container">
+        <div className=" container protfolio__container">
+          
           {
             portfolio.map((item) => {
 
@@ -45,7 +47,7 @@ const Portfolio = () => {
           }
         </div>
 
-      </section >
+      </div>
 
 
     </>

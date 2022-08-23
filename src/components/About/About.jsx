@@ -3,12 +3,13 @@ import './about.css'
 import { Link } from 'react-router-dom'
 
 import { FaAward, FaCss3Alt, FaReact, FaFigma, FaNpm } from 'react-icons/fa'
-import { BsArrowRightSquareFill, BsArrowLeftSquareFill, BsBootstrapFill } from 'react-icons/bs'
+import { BsBootstrapFill } from 'react-icons/bs'
 import { AiFillHtml5 } from 'react-icons/ai'
 import { SiVercel, SiJavascript, SiTailwindcss, SiAdobephotoshop, SiAdobelightroom, SiAdobeillustrator } from 'react-icons/si'
 import { DiGit } from 'react-icons/di'
 import { FiLink } from 'react-icons/fi'
 
+import { MdArrowForwardIos, MdArrowBackIosNew } from 'react-icons/md'
 
 
 import { useTranslation } from 'react-i18next'
@@ -30,8 +31,8 @@ const About = () => {
     <>
 
       <div className="arrow_container">
-        <Link to="/" ><BsArrowLeftSquareFill className="arrow" /></Link>
-        <Link to="/portfolio" ><BsArrowRightSquareFill className="arrow" /></Link>
+        <Link to="/" ><MdArrowBackIosNew className="arrow" /></Link>
+        <Link to="/portfolio" ><MdArrowForwardIos className="arrow" /></Link>
       </div>
 
       <section id="about" className="container">

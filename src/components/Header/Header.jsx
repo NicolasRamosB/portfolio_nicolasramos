@@ -5,7 +5,7 @@ import HeaderSocial from './HeaderSocial'
 import ME from '../../assets/DSC_0075.jpg'
 import { Link } from 'react-router-dom'
 
-import { BsArrowRightSquareFill, BsArrowLeftSquareFill } from 'react-icons/bs'
+import { MdArrowForwardIos} from 'react-icons/md'
 import { useTranslation } from 'react-i18next'
 
 
@@ -19,8 +19,8 @@ const Header = () => {
       
 
       <div className="arrow_container">
-        <Link to="/" className="arrow" ><BsArrowLeftSquareFill /></Link>
-        <Link to="/about" className="arrow"><BsArrowRightSquareFill /></Link>
+        <Link to="/" className="arrow" ></Link>
+        <Link to="/about" className="arrow"><MdArrowForwardIos /></Link>
       </div>
       <div className="container header__container">
       

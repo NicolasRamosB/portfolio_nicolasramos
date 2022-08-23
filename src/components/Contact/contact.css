@@ -12,16 +12,19 @@
     flex-direction: column;
     margin-top:13%;
     gap: 3rem;
+    z-index: 2;
+    font-size:1rem;
     
 }
 
 .contact__option{
     background: var(--color-bg);
-    padding:1.2rem;
+    padding:2.5rem;
     border-radius: 1.2rem;
     text-align: center;
     border: 1px solid transparent;
     transition: var(--transition);
+    
 }
 
 .contact__option:hover{
@@ -30,16 +33,17 @@
 
 }
 
-.contact__icon{
-    font-size:1.5rem !important;
-    margin-bottom: 0.5rem;
+.contact_icon{
+    font-size:2rem;
+    width: 100%;
 
 }
 
 .contact__option a{
     margin-top: 0.7rem;
     display:inline-block;
-    font-size:0.8rem ;
+    font-weight: bold;
+    font-size:1rem ;
 }
 
 

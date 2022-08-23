@@ -2,7 +2,10 @@ import React, { useRef } from 'react';
 import './contact.css'
 
 import { Link } from 'react-router-dom'
-import { BsArrowLeftSquareFill, BsArrowRightSquareFill } from 'react-icons/bs'
+
+
+import { MdArrowBackIosNew } from 'react-icons/md'
+
 import { MdEmail } from 'react-icons/md'
 import { AiOutlineWhatsApp } from 'react-icons/ai'
 
@@ -14,7 +17,7 @@ import { InputTextarea } from 'primereact/inputtextarea';
 
 const Contact = () => {
 
-  const [t, i18n] = useTranslation("global")
+  const [t ] = useTranslation("global")
 
   const form = useRef();
 
@@ -33,8 +36,8 @@ const Contact = () => {
 
   return (<>
     <div className="arrow_container">
-      <Link to="/portfolio" ><BsArrowLeftSquareFill className="arrow" /></Link>
-      <Link to="" aria-disabled ><BsArrowRightSquareFill className="arrow" /></Link>
+      <Link to="/portfolio" ><MdArrowBackIosNew className="arrow" /></Link>
+      <Link to="" aria-disabled ></Link>
     </div>
     <div id="contact">
     
