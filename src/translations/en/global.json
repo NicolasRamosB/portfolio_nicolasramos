@@ -15,6 +15,11 @@
         "message":"Your Message"
     },
 
+    "portfolio":{
+        "prox":"Coming soon. . .",
+        "wip":"Work in progress"
+    },
+
     "nav":{
         "home":"Home",
         "certificate":"Certificate & Skills",
