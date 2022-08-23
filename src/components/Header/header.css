@@ -1,5 +1,5 @@
 header{
-    height: 100vh;
+    
     padding-top:3rem;
 }
 
@@ -7,7 +7,7 @@ header{
 
 .header__container{
     text-align:center;
-    height: 100%;
+    
 }
 
 
@@ -115,13 +115,33 @@ header{
 
 
 
+@media screen and (max-width: 1440px) {
+    .titles__header h1 {
+      font-size:2rem;
+    }
 
-
-@media screen and (max-width: 1024px) {
-    header{
-        height: 100vh;
+    .typing-demo{
+        font-size:1.4rem;
+    }
+    
+    .containter__me{
+    margin-top: 0rem;
+     
+    
+    }
+    .description{
+        
+        width: 80%;
+        
         
     }
+
+    
+   
+}
+
+@media screen and (max-width: 1024px) {
+    
 
     .containter__me{
         

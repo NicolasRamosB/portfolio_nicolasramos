@@ -1,21 +1,17 @@
 #about{
     
     width: 80%;
-
     text-align:center;
 }
 
-#about h1{
-    padding-top:3rem;
-}
 
 .about__container{
-    margin-top:3rem;
     width: 100%;
+    padding-top:5%;
 }
 
 .about__content{
-   
+  
     
     border: 2px groove rgba(255, 255, 255, 0.205);
     border-radius:  50px 50px 0px 0px;
@@ -29,13 +25,12 @@
     background: white;
 }
 .swiper-button-prev::after, .swiper-button-next::after{
-    color: white;
+    color: var(--color-white);
     background: rgba(0, 0, 0, 0.479);
     padding:10px;
 }
 
 .about__card{
-     
     padding-bottom: 4rem;
 
 }
@@ -126,7 +121,7 @@ i{
 }
 
 
-  
+
   @media screen and (max-width: 600px) {
     .swiper-container {
       width: 600px;
@@ -150,4 +145,20 @@ i{
 
     }
    
+  }
+  
+  @media screen and (max-width: 1440px) {
+    .skills{
+        height: 47vh;
+
+    }
+    .about__card h3{
+        font-size:.9rem;
+    }
+
+    .about__container{
+        padding-top:5%;
+    }
+    
+    
   }

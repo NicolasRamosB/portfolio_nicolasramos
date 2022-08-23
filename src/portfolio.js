@@ -1,8 +1,3 @@
-import IMG1 from './assets/streetlife.png'
-import IMG2 from './assets/qhipa.png'
-import IMG3 from './assets/chichilo.png'
-import IMG4 from './assets/orion.png'
-
 
 
 const portfolio = [
@@ -10,8 +5,8 @@ const portfolio = [
     {
         id: 1,
         title: 'Street Life',
-        description: 'Proyecto final del curso Desarrollo Web',
-        img:IMG1,
+        description: 'Proyecto final - Desarrollo Web',
+      
         github: 'https://github.com/NicolasRamosB/StreetLife_RamosNicolas',
         demo:'https://street-life.vercel.app/'
     },
@@ -19,8 +14,8 @@ const portfolio = [
     {
         id: 2,
         title: 'Qhipa Verde',
-        description: 'Proyecto Real de cliente asignado por Coderhouse',
-        img:IMG2,
+        description: 'Proyecto para cliente - freelance',
+        
         github: 'https://github.com/NicolasRamosB/Qhipa_verde_reactJS',
         demo:'https://qhipa-verde.vercel.app/'
     },
@@ -28,8 +23,8 @@ const portfolio = [
     {
         id: 3,
         title: 'Chichilo M.D.Q.',
-        description: 'Proyecto final del curso React Js',
-        img: IMG3,
+        description: 'Proyecto final - React Js',
+       
         github: 'https://github.com/NicolasRamosB/proyectoFinal_react_NicolasRamos',
         demo:'https://chichilo-mardelplata.vercel.app/'
     },
@@ -37,8 +32,8 @@ const portfolio = [
     {
         id: 4,
         title: 'Orion',
-        description: 'Proyecto final del curso JavaScript',
-        img: IMG4 ,
+        description: 'Proyecto final - JavaScript',
+        
         github: 'https://github.com/NicolasRamosB/proyectofinalJS',
         demo:'https://proyectoorion-r0d7xvt9e-nicolasramosb.vercel.app/'
     },

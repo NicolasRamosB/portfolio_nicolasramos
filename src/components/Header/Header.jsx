@@ -24,7 +24,7 @@ const Header = () => {
       </div>
       <div className="container header__container">
       
-        <div >
+        <div className="titles__header">
           <h5>{t("header.hello")}</h5>
           <h1>Nicolas Ramos</h1>
           <div className="wrapper">

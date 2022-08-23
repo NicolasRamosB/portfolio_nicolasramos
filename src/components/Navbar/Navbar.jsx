@@ -8,20 +8,22 @@ import { MdWeb } from 'react-icons/md'
 import { NavLink } from 'react-router-dom'
 
 import { Tooltip } from '@mui/material'
+import { useTranslation } from 'react-i18next'
 
 
 
 const Navbar = () => {
+  const [t] = useTranslation("global")
 
 
   return (
     <>
       <nav>
-        <Tooltip title="Home" placement="top">
+        <Tooltip title={t("nav.home")} placement="top">
           <NavLink to="/" ><AiOutlineUser /></NavLink>
         </Tooltip>
 
-        <Tooltip title="Certificate" placement="top">
+        <Tooltip title={t("nav.certificate")} placement="top">
         <NavLink to="/about"><FaAward /></NavLink>
         </Tooltip>
         
@@ -29,7 +31,7 @@ const Navbar = () => {
         <NavLink to="/portfolio" ><MdWeb /></NavLink>
         </Tooltip>
 
-        <Tooltip title="Contact" placement="top">
+        <Tooltip title={t("nav.contact")} placement="top">
         <NavLink to="/contact" ><BiChat /></NavLink>
         </Tooltip>
 

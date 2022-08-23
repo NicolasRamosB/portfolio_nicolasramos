@@ -12,7 +12,6 @@ import { FiLink } from 'react-icons/fi'
 import { MdArrowForwardIos, MdArrowBackIosNew } from 'react-icons/md'
 
 
-import { useTranslation } from 'react-i18next'
 
 import { Pagination, Navigation, Autoplay } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -25,7 +24,6 @@ import 'swiper/css/autoplay';
 import certificated from '../../certificate'
 
 const About = () => {
-  const [t]= useTranslation("global")
 
   return (
     <>
@@ -36,7 +34,6 @@ const About = () => {
       </div>
 
       <section id="about" className="container">
-        <h1>{t("certifications.title")}</h1>
         <div className="container about__container">
 
 
@@ -74,6 +71,7 @@ const About = () => {
 
                 return (
                   <SwiperSlide className="about__card" key={item.id}>
+                    
                     <img src={item.img} alt={item.title} />
                     <h3>{item.title} <FaAward className="about__icon" /></h3>
                     <small>{item.from}</small>

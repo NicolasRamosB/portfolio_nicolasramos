@@ -4,6 +4,7 @@ import { loadFull } from "tsparticles";
 import { useCallback, useMemo } from 'react'
 
 const ParticlesComponent = () => {
+    
     const options = useMemo(() => {
         return {
             

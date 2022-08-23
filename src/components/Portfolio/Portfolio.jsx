@@ -13,9 +13,9 @@ const Portfolio = () => {
         <Link to="/contact" ><MdArrowForwardIos className="arrow" /></Link>
       </div>
       <div id="portfolio">
-      <h2>Portfolio</h2>
 
         <div className=" container protfolio__container">
+      <h2>Portfolio</h2>
           
           {
             portfolio.map((item) => {

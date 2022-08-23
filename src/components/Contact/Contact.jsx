@@ -46,14 +46,14 @@ const Contact = () => {
           <article className="contact__option">
             <MdEmail className="contact_icon" />
             <h4>Email</h4>
-            <h5>nicolasramos.borner@gmail.com</h5>
+            <h6>nicolasramos.borner@gmail.com</h6>
             <a href="mailto:nicolasramos.borner@gmail.com" target="_blank" rel="noreferrer">{t("contact.send_m")}</a>
           </article>
 
           <article className="contact__option">
             <AiOutlineWhatsApp className="contact_icon" />
             <h4>Whatsapp</h4>
-            <h5>+54 9 1164953125</h5>
+            <h6>+54 9 1164953125</h6>
             <a href="https://api.whatsapp.com/send?phone=5491164953125" target="_blank" rel="noreferrer">{t("contact.send_m")}</a>
           </article>
         </div>
