@@ -67,6 +67,9 @@ i{
     padding:40px;
 }
 
+.swiper-free-mode>.swiper-wrapper {
+    transition-timing-function: linear !important;
+}
 
 .skills{
     width: 100%;

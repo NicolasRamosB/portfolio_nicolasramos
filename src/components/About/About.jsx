@@ -13,13 +13,15 @@ import { MdArrowForwardIos, MdArrowBackIosNew } from 'react-icons/md'
 
 
 
-import { Pagination, Navigation, Autoplay } from 'swiper';
+import { Pagination, Navigation, Autoplay, FreeMode } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 import 'swiper/css/scrollbar';
 import 'swiper/css/autoplay';
+import "swiper/css/free-mode";
+
 
 import certificated from '../../certificate'
 
@@ -95,7 +97,7 @@ const About = () => {
           <article className="skills__container">
             
             <Swiper
-              modules={[ Autoplay ]}
+              modules={[ Autoplay, FreeMode ]}
               
               
 
@@ -112,19 +114,15 @@ const About = () => {
               }}
           
               
-              speed={1000}
-              grabCursor={true}
-             
-              
-              freeMode={true}
-              
+              speed={1500}
+              grabCursor
+              freeMode
+              loop
+              loopFillGroupWithBlank
               autoplay={{
-                delay: 1,
+                delay:0,
                 disableOnInteraction: false
               }}
-
-             
-              
               className="skills__content">
 
               <SwiperSlide>
