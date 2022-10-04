@@ -4,7 +4,7 @@ import './buttonTraslate.css'
 import IMGArg from '../../assets/argentina.png'
 import IMGUsa from '../../assets/usa.png'
 
-import i18next from "i18next";
+
 
 const ButtonTraslate = () => {
 
