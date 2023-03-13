@@ -122,6 +122,12 @@ i{
 .icon13{
     color: rgb(93, 167, 96)
 }
+.icon14{
+    color: rgb(116, 34, 164)
+}
+.icon15{
+    color: rgb(116, 34, 164)
+}
 
 
 
@@ -137,7 +143,8 @@ i{
 
     }
   }
-  
+ 
+
   @media screen and (max-width: 1024px) {
     .swiper-container {
       width: 1024px;

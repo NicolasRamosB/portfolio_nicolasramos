@@ -1,6 +1,14 @@
 
+.imgen-portfolio{
+    border-radius: 10px;
+    border: 2px solid rgb(253, 253, 253);
+    margin-top: 10px;
+    opacity: 85%;
+    
+}
+
 #portfolio h2{
-    font-size:3rem;
+    font-size:5rem;
     text-align: center;
     padding:3rem;
     text-shadow:  -2px -2px 10px rgba(4, 158, 185, 0.877),

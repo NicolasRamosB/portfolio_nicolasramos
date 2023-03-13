@@ -133,12 +133,10 @@ img{
 
 /* Media Queries */
 
-@media screen and (max-width: 1024px){
+@media screen and (max-width:  1024px){
     .container{
         width: var(--container-width-md);
     }
-
-  
 }
 
 @media screen and (max-width: 600px){

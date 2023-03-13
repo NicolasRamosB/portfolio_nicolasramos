@@ -3,11 +3,14 @@ import './about.css'
 import { Link } from 'react-router-dom'
 
 import { FaAward, FaCss3Alt, FaReact, FaFigma, FaNpm } from 'react-icons/fa'
-import { BsBootstrapFill } from 'react-icons/bs'
-import { AiFillHtml5 } from 'react-icons/ai'
-import { SiVercel, SiJavascript, SiTailwindcss, SiAdobephotoshop, SiAdobelightroom, SiAdobeillustrator } from 'react-icons/si'
+import { BsBootstrapFill} from 'react-icons/bs'
+import { AiFillHtml5, AiOutlineConsoleSql } from 'react-icons/ai'
+import { SiVercel,SiDotnet, SiCsharp, SiJavascript, SiTailwindcss, SiAdobephotoshop, SiAdobelightroom, SiAdobeillustrator } from 'react-icons/si'
 import { DiGit } from 'react-icons/di'
 import { FiLink } from 'react-icons/fi'
+
+
+
 
 import { MdArrowForwardIos, MdArrowBackIosNew } from 'react-icons/md'
 
@@ -150,7 +153,7 @@ const About = () => {
               </SwiperSlide>
 
               <SwiperSlide>
-                <i className="icon7"><DiGit /><small>Git</small></i>
+                <i className="icon7 text-light"><DiGit /><small>Git</small></i>
               </SwiperSlide>
 
               <SwiperSlide>
@@ -177,6 +180,16 @@ const About = () => {
                 <i className="icon13"><FaFigma /><small>Figma</small></i>
               </SwiperSlide>
 
+              <SwiperSlide>
+                <i className="icon14"><SiCsharp /><small>CSharp</small></i>
+              </SwiperSlide>
+              <SwiperSlide>
+                <i className="icon15"><SiDotnet /><small>.Net</small></i>
+              </SwiperSlide>
+              <SwiperSlide>
+                <i className="icon16"><AiOutlineConsoleSql /><small>SQL Server</small></i>
+              </SwiperSlide>
+             
 
             </Swiper>
           </article>

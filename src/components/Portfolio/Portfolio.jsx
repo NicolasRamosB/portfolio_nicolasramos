@@ -7,6 +7,7 @@ import { useTranslation } from 'react-i18next'
 
 
 
+
 const Portfolio = () => {
 
   const [t]= useTranslation("global")
@@ -19,7 +20,6 @@ const Portfolio = () => {
       <div id="portfolio">
 
         <div className=" container protfolio__container">
-          <h2>Portfolio</h2>
 
           {
             portfolio.map((item) => {
@@ -32,6 +32,8 @@ const Portfolio = () => {
                     <div className="protfolio__info">
                       <h3>{item.title}</h3>
                       <small>{item.description}</small>
+                      <img className="imgen-portfolio" src={item.imgen} alt={item.title}/>
+                      
                     </div>
 
                     <div className="portfolio__cta">
@@ -58,12 +60,6 @@ const Portfolio = () => {
               <h3>{t("portfolio.prox")}</h3>
               <small>{t("portfolio.wip")}</small>
             </div>
-
-            <div className="portfolio__cta">
-              <a className="btn" href="/portfolio">GitHub</a>
-              <a className="btn btn-primary" href="/portfolio" >Demo</a>
-            </div>
-
           </article>
         </div>
 
